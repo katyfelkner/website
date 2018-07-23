@@ -14,9 +14,9 @@ markdown: kramdown
 
 
 ### content configuration ###
-title:       "Katy Felkner's Homepage"
+title:       "Katy Felkner"
 keywords:    "computer science, python, computer programmer, digital humanities, classics, digital classics"
-description: ""
+description: "computer science undergrad and aspiring digital humanist"
 source_link: ""
 favicon:     #put a path like: "img/favicon.ico"
 touch_icon:  #put a path like: "img/apple-touch-icon.png"
