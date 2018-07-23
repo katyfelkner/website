@@ -12,10 +12,6 @@ iframe {
     overflow: auto;
 }
 
-.cell {
-    border: 1px solid black;
-}
-
 .item-a {
     grid-column-start: left-1;
     grid-golumn-end: left-2;
@@ -72,11 +68,7 @@ h1 {
 p {
     padding: 10px;
 }
-table.images {
-    border-collapse: collapse;
-    /*    border: 20px solid white;
-*/
-}
+
 
 table.list {
     margin: auto;
