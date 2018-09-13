@@ -42,18 +42,18 @@ img {
 }
 
 a {
+    color: #66ff66
     display: table;
     position: relative;
     height: 100%;
     width: 100%;
     text-decoration: none;
 }
-a:hover {
-    color: #66ff66;
-}
-a:active {
-    color: #66ff66;
-}
+a:visited { text-decoration: none; color:#66ff66; }
+a:hover { text-decoration: none; color:white; }
+a:focus { text-decoration: none; color:#66ff66; }
+a:hover, a:active { text-decoration: none; color:white }
+
 span {
     display: table-cell;
     text-align: center;
