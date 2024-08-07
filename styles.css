@@ -1,0 +1,188 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body and Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #4b0082; /* Dark purple text */
+    line-height: 1.6;
+    background-color: #e6e6fa; /* Lavender background */
+}
+
+/* Header Styles */
+header {
+    background: #6a0dad; /* Brighter purple for header */
+    color: #e6e6fa; /* Lavender text */
+    padding: 20px; /* Increased padding for header */
+    text-align: center;
+    margin-bottom: 20px; /* Adjusted margin for spacing */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px; /* Space between photo and text */
+}
+
+.header-photo {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Square aspect ratio */
+    object-fit: cover; /* Ensure the photo covers the area */
+    border: 3px solid #e6e6fa; /* Border color to match the header text */
+}
+
+.header-text {
+    text-align: left;
+}
+
+header h1 {
+    font-family: 'Roboto Serif', serif;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+/* Container Styles */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Main Section Styles */
+main {
+    padding: 0;
+    margin-bottom: 100px; /* Ensure space for footer */
+}
+
+/* Container Styles */
+.content-container {
+    display: flex; /* Flexbox for side-by-side layout */
+    gap: 20px; /* Space between content and Twitter feed */
+    align-items: stretch; /* Ensure children take full height */
+}
+
+.main-content {
+    flex: 1; /* Allow main content to take available space */
+}
+
+
+section {
+    margin: 10px 0; /* Reduced margin between sections */
+    padding: 20px; /* Padding inside sections */
+    background: #e6e6fa; /* Lavender background for all sections */
+    color: #4b0082; /* Dark purple text color for all sections */
+    border-radius: 10px;
+}
+
+/* Heading Styles within Sections */
+section h2 {
+    font-family: 'Roboto Serif', serif;
+    color: #4b0082; /* Dark purple for headings */
+    border-bottom: 3px solid #8a2be2; /* Brighter purple underline for headings */
+    padding-bottom: 8px; /* Reduced padding under headings */
+    margin-bottom: 15px; /* Reduced margin under headings */
+}
+
+/* List Styles */
+ul {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+}
+
+li {
+    margin: 8px 0; /* Reduced margin for list items */
+    line-height: 1.6; /* Ensure readability */
+    position: relative; /* Position relative for custom bullets */
+    padding-left: 30px; /* Space for custom bullets */
+}
+
+li::before {
+    content: "•"; /* Custom bullet character */
+    color: #8a2be2; /* Brighter purple for bullets */
+    font-size: 1.5em; /* Size of custom bullet */
+    position: absolute; /* Absolute positioning */
+    left: 0; /* Align bullet to the left of the list item */
+    top: 50%; /* Center bullet vertically */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+}
+
+a {
+    color: #8a2be2; /* Brighter purple for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Twitter Feed Styles */
+.twitter-feed {
+    width: 250px; /* Slightly thinner width */
+    margin-right: 50px; /* Margin to the left of the Twitter feed */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.twitter-timeline {
+    width: 100% !important; /* Full width of the container */
+    border: none; /* Remove border */
+}
+
+/* Footer Styles */
+footer {
+    background: #6a0dad; /* Brighter purple for footer */
+    color: #e6e6fa; /* Lavender text */
+    text-align: center;
+    padding: 20px 0; /* Increased padding for footer */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    margin-bottom: 10px; /* Space above buttons */
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between buttons */
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Width of the button */
+    height: 40px; /* Height of the button */
+    background-color: #e6e6fa; /* Lavender background for buttons */
+    border-radius: 50%; /* Circular buttons */
+    color: #6a0dad; /* Brighter purple icon color */
+    font-size: 1.5em; /* Size of the icon */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.social-button:hover {
+    background-color: #dcdcdc; /* Light gray background on hover */
+    color: #4b0082; /* Dark purple icon color on hover */
+}
