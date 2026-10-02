@@ -117,8 +117,7 @@ li::before {
     font-size: 1.5em; /* Size of custom bullet */
     position: absolute; /* Absolute positioning */
     left: 0; /* Align bullet to the left of the list item */
-    top: 50%; /* Center bullet vertically */
-    transform: translateY(-50%); /* Adjust vertical alignment */
+    top: 0; /* Align bullet with the first line */
 }
 
 a {
